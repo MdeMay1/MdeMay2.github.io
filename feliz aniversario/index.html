@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversario mi pepita hermosa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>
+      <span class="blanco">Feliz Aniversario</span>
+      <span class="rojo">MI AMOR</span>
+    </h1>
+  </header>
+
+  <main>
+    <div class="contenido3">
+      <div class="mensaje izquierda">
+        <p>
+            Buenos días, buenas tardes o buenas noches mi hijita hermosaaaa, ¿cómo estás bb?,
+            ¿cómo has estado sin mí?, ¿me extrañas mucho? Porque yo sí te extraño demasiado:ccccccc 💕
+            Bueno amocito como ya tu sabras hoy cumplimos 1 año con un mesesito bien juntitos, bueno 
+            no tan juntitos poke tu te juiste y me dejaste aqui en Arequipa sintigo:c , pero no importa
+            poque igual nos vamos a voler a ver otra vez, dejame decirte que eres una gran mujer miamor, y te agradezco por todo lo que
+            hiciste, hicimos juntos, por que uste siempre esta para mi, verdad amor¿ yose que zy.
+            <br>
+            Amo que estes a mi lado, que me acompañes en todo momento, y algo unico en ti, amo que me muerdas
+          extraño que me muerdas, extraño mucho eso, y todo, todoooo amor, todo:c. 
+          Sabes amor me es muy dificil asimilar aun que ya no te pueda ver casi todo el tiempo, aunque sea un segundo
+          extraño mucho eso, no importa si te enojaras, o si no me hables cuadno te nojes o te quieras ir, 
+          pero quiero que estes aqui, sentirte y tenerte muy cerca de mi:c. 
+
+        </p>
+      </div>
+
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/hijita.png" alt="Imagen de aniversario" />
+          </div>
+          <div class="flip-card-back">
+            <p style="font-size: 15px;">Me enamoré de ti antes de BESARTE<br>
+                Me enamoré de ti antes de tocar tu ALMA<br>
+                Me enamoré de ti esa tarde en la que empezamos a hablar,
+                porque sentí que eras mi persona. 
+                Conocerte fue, es, y seguirá siendo lo mejor que me haya pasado
+                en toda mi vida 💖</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mensaje derecha">
+        <p>
+        Eres todo lo que quiero miamor, todo lo que deseo y anhelo 
+          profundamente que te quedes conmigo, que logremos todo lo que nos propusimos, terminar nuestros estudios
+          chambeyar dure,casarnos, formar una familia, una gran familia, que me acompañes para siempre miamor. <br>
+          Es dificil miamor, no pense que este momento iba a llegar tan pronto, pero no importa, Lucharemos por lo que
+          queremos, no miamor¿?
+          siempre pero siempre vamos a luchar, dime que si hijita, dime que si vamos a luchar shempre, que no nos dejaremos 
+          ir nunca, nunca nos dejaremos ir, escucha bien esto miamor, YO NUNCA TE DEJARE IR, nunca me dejes ir miamor, Porque
+          se miu bien que no es lo que quiero, y que no estaria bien:c 
+          YO TE NECESITO Y MUCHO<br>TE AMO MUCHO MIAMOR<br>TE EXTRAÑO DEMASIADO :C<br>
+          Prometeme, jurame que siempre vas a estar a mi lado, que sere solo YO para toda tu vida, que seremos solo NOSOTROS DOS
+          prometemelo, juramelo miamorrrrrrrrrrrrr<br> 
+        <p style="color: red;">(Po cierto ya le presionaste en la imagen de nosotros bb? aver hazlo)</p>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>¿Quieres compartir el resto de tu vida junto a la mía?<br></p>
+    <p style="color: red;">(Aver te reto a decir que NO, si es que puedes, de que te casas conmigo te casas:v)</p>
+    <div class="opciones">
+      <a href="carta.html"><button id="btn-si">Acekto💖</button></a>
+      <button id="btn-no">Perdonenme a todos, no acekto xd 😢</button>
+    </div>
+  </footer>
+
+  <script>
+    const btnNo = document.getElementById('btn-no');
+
+    // Función para mover el botón "No" a una posición aleatoria cuando se hace clic
+    btnNo.addEventListener('click', () => {
+      const maxX = window.innerWidth - btnNo.offsetWidth;
+      const maxY = window.innerHeight - btnNo.offsetHeight;
+      const randomX = Math.floor(Math.random() * maxX);
+      const randomY = Math.floor(Math.random() * maxY);
+
+      // Cambiar la posición del botón "No" en coordenadas aleatorias
+      btnNo.style.position = 'absolute'; // Aseguramos que se pueda mover libremente
+      btnNo.style.left = `${randomX}px`;
+      btnNo.style.top = `${randomY}px`;
+    });
+  </script>
+</body>
+</html>
